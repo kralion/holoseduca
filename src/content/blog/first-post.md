@@ -1,16 +1,22 @@
 ---
-title: 'First post'
-description: 'Lorem ipsum dolor sit amet'
-pubDate: 'Jul 08 2022'
-heroImage: '../../assets/blog-placeholder-3.jpg'
+title: "El Poder del Desarrollo Socioemocional en la Educación"
+description: "Descubre cómo el desarrollo de la inteligencia emocional, la resiliencia y el liderazgo puede transformar la vida de los jóvenes."
+pubDate: "Jun 10 2024"
+heroImage: "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?q=80&w=2148&auto=format&fit=crop"
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus commodo viverra. Adipiscing enim eu turpis egestas pretium. Euismod elementum nisi quis eleifend quam adipiscing. In hac habitasse platea dictumst vestibulum. Sagittis purus sit amet volutpat. Netus et malesuada fames ac turpis egestas. Eget magna fermentum iaculis eu non diam phasellus vestibulum lorem. Varius sit amet mattis vulputate enim. Habitasse platea dictumst quisque sagittis. Integer quis auctor elit sed vulputate mi. Dictumst quisque sagittis purus sit amet.
+En HolosEduca, creemos firmemente que la educación va más allá de los libros de texto y las calificaciones. Una parte fundamental de nuestro enfoque es el **Desarrollo Socioemocional**, un pilar que prepara a niños y jóvenes para enfrentar los desafíos de la vida con confianza y empatía.
 
-Morbi tristique senectus et netus. Id semper risus in hendrerit gravida rutrum quisque non tellus. Habitasse platea dictumst quisque sagittis purus sit amet. Tellus molestie nunc non blandit massa. Cursus vitae congue mauris rhoncus. Accumsan tortor posuere ac ut. Fringilla urna porttitor rhoncus dolor. Elit ullamcorper dignissim cras tincidunt lobortis. In cursus turpis massa tincidunt dui ut ornare lectus. Integer feugiat scelerisque varius morbi enim nunc. Bibendum neque egestas congue quisque egestas diam. Cras ornare arcu dui vivamus arcu felis bibendum. Dignissim suspendisse in est ante in nibh mauris. Sed tempus urna et pharetra pharetra massa massa ultricies mi.
+### ¿Qué es el Desarrollo Socioemocional?
 
-Mollis nunc sed id semper risus in. Convallis a cras semper auctor neque. Diam sit amet nisl suscipit. Lacus viverra vitae congue eu consequat ac felis donec. Egestas integer eget aliquet nibh praesent tristique magna sit amet. Eget magna fermentum iaculis eu non diam. In vitae turpis massa sed elementum. Tristique et egestas quis ipsum suspendisse ultrices. Eget lorem dolor sed viverra ipsum. Vel turpis nunc eget lorem dolor sed viverra. Posuere ac ut consequat semper viverra nam. Laoreet suspendisse interdum consectetur libero id faucibus. Diam phasellus vestibulum lorem sed risus ultricies tristique. Rhoncus dolor purus non enim praesent elementum facilisis. Ultrices tincidunt arcu non sodales neque. Tempus egestas sed sed risus pretium quam vulputate. Viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare. Fringilla urna porttitor rhoncus dolor purus non. Amet dictum sit amet justo donec enim.
+El desarrollo socioemocional es el proceso a través del cual los niños y adolescentes adquieren las habilidades para reconocer y manejar sus emociones, desarrollar empatía por los demás, establecer relaciones positivas, tomar decisiones responsables y manejar situaciones desafiantes de manera efectiva.
 
-Mattis ullamcorper velit sed ullamcorper morbi tincidunt. Tortor posuere ac ut consequat semper viverra. Tellus mauris a diam maecenas sed enim ut sem viverra. Venenatis urna cursus eget nunc scelerisque viverra mauris in. Arcu ac tortor dignissim convallis aenean et tortor at. Curabitur gravida arcu ac tortor dignissim convallis aenean et tortor. Egestas tellus rutrum tellus pellentesque eu. Fusce ut placerat orci nulla pellentesque dignissim enim sit amet. Ut enim blandit volutpat maecenas volutpat blandit aliquam etiam. Id donec ultrices tincidunt arcu. Id cursus metus aliquam eleifend mi.
+En nuestros talleres, nos enfocamos en tres áreas clave:
 
-Tempus quam pellentesque nec nam aliquam sem. Risus at ultrices mi tempus imperdiet. Id porta nibh venenatis cras sed felis eget velit. Ipsum a arcu cursus vitae. Facilisis magna etiam tempor orci eu lobortis elementum. Tincidunt dui ut ornare lectus sit. Quisque non tellus orci ac. Blandit libero volutpat sed cras. Nec tincidunt praesent semper feugiat nibh sed pulvinar proin gravida. Egestas integer eget aliquet nibh praesent tristique magna.
+1.  **Inteligencia Emocional:** Ayudamos a los estudiantes a identificar sus propias emociones y las de los demás. Aprenden a nombrar lo que sienten y a comprender cómo sus emociones influyen en su comportamiento. Esta habilidad es crucial para la autoconciencia y la autorregulación.
+
+2.  **Resiliencia:** La vida está llena de altibajos. Fomentamos la resiliencia enseñando a los jóvenes a ver los desafíos como oportunidades de crecimiento. A través de actividades prácticas, aprenden a recuperarse de la adversidad, a perseverar ante los obstáculos y a mantener una mentalidad positiva.
+
+3.  **Liderazgo Juvenil:** Creemos que cada joven tiene el potencial de ser un líder. Nuestros programas de liderazgo juvenil inspiran a los estudiantes a tomar la iniciativa, a trabajar en equipo y a convertirse en agentes de cambio positivo en sus comunidades. Fomentamos habilidades de comunicación, resolución de problemas y toma de decisiones.
+
+Invertir en el desarrollo socioemocional es invertir en un futuro donde las personas no solo son académicamente competentes, sino también emocionalmente inteligentes, resilientes y socialmente responsables. Es la base para construir comunidades más fuertes y un mundo más compasivo.

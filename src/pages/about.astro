@@ -17,119 +17,210 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 		<Header />
 		<main class="flex-grow container mx-auto px-4 py-8">
 			<div class="prose max-w-none">
-				<div class="hero bg-base-200 rounded-box p-8 mb-12">
-					<div class="hero-content text-center">
-						<div>
-							<h1 class="text-5xl font-bold mb-8">About HolosEduca</h1>
+				<div
+					class="hero bg-base-200 rounded-box p-8 mb-12"
+					data-aos="fade-down"
+				>
+					<div class="hero-content flex-col lg:flex-row-reverse gap-12">
+						<img
+							src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=2070&auto=format&fit=crop"
+							class="max-w-sm md:max-w-md rounded-lg shadow-2xl"
+							alt="Team working"
+						/>
+						<div class="text-center lg:text-left">
+							<h1 class="text-5xl font-bold mb-8">Acerca de HolosEduca</h1>
 							<p class="text-xl">
-								Transforming education in Colombia through innovative and
-								accessible learning solutions.
+								Transformando la educación en Colombia a través de soluciones de
+								aprendizaje innovadoras y accesibles.
 							</p>
 						</div>
 					</div>
 				</div>
 
-				<div class="grid md:grid-cols-2 gap-8 mb-12">
-					<div class="card bg-primary text-primary-content">
+				<div class="grid md:grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+					<div
+						class="card bg-primary text-primary-content shadow-lg"
+						data-aos="fade-right"
+					>
+						<figure class="px-10 pt-10">
+							<img
+								src="https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=2070&auto=format&fit=crop"
+								alt="Our Mission"
+								class="rounded-xl h-48 w-full object-cover"
+							/>
+						</figure>
 						<div class="card-body">
-							<h2 class="card-title">Our Mission</h2>
+							<h2 class="card-title">Nuestra Misión</h2>
 							<p>
-								At HolosEduca, we are dedicated to making quality education
-								accessible to all Colombians. We believe that education is the
-								key to personal growth and societal development.
+								En HolosEduca, nos dedicamos a hacer que la educación de calidad
+								sea accesible para todos los colombianos. Creemos que la
+								educación es la clave para el crecimiento personal y el
+								desarrollo de la sociedad.
 							</p>
 						</div>
 					</div>
 
-					<div class="card bg-secondary text-secondary-content">
+					<div
+						class="card bg-secondary text-secondary-content shadow-lg"
+						data-aos="fade-left"
+					>
+						<figure class="px-10 pt-10">
+							<img
+								src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2071&auto=format&fit=crop"
+								alt="Our Vision"
+								class="rounded-xl h-48 w-full object-cover"
+							/>
+						</figure>
 						<div class="card-body">
-							<h2 class="card-title">Our Vision</h2>
+							<h2 class="card-title">Nuestra Visión</h2>
 							<p>
-								We envision a Colombia where every person has access to
-								high-quality educational resources and opportunities, regardless
-								of their location or economic situation.
+								Visualizamos una Colombia donde cada persona tenga acceso a
+								recursos y oportunidades educativas de alta calidad, sin
+								importar su ubicación o situación económica.
 							</p>
 						</div>
 					</div>
 				</div>
 
-				<div class="card bg-base-100 shadow-xl mb-12">
+				<div class="card bg-base-100 shadow-xl mb-12" data-aos="fade-up">
 					<div class="card-body">
-						<h2 class="card-title mb-4">What We Do</h2>
-						<div class="space-y-4">
-							<div class="flex items-start gap-4">
-								<div class="badge badge-primary badge-lg">1</div>
-								<p>
-									Create and distribute high-quality educational content
-									tailored to Colombian context and needs.
-								</p>
-							</div>
-							<div class="flex items-start gap-4">
-								<div class="badge badge-primary badge-lg">2</div>
-								<p>
-									Develop innovative teaching methodologies that combine
-									traditional wisdom with modern technology.
-								</p>
-							</div>
-							<div class="flex items-start gap-4">
-								<div class="badge badge-primary badge-lg">3</div>
-								<p>
-									Build communities of educators and learners to share knowledge
-									and best practices.
-								</p>
-							</div>
-							<div class="flex items-start gap-4">
-								<div class="badge badge-primary badge-lg">4</div>
-								<p>
-									Partner with educational institutions to expand our reach and
-									impact.
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="card bg-base-100 shadow-xl mb-12">
-					<div class="card-body">
-						<h2 class="card-title mb-4">Our Values</h2>
-						<div class="grid md:grid-cols-3 gap-6">
-							<div class="flex flex-col items-center text-center">
-								<div class="badge badge-accent badge-lg mb-2">
-									Accessibility
+						<div class="grid md:grid-cols-2 gap-8 items-center">
+							<div class="order-2 md:order-1">
+								<h2 class="card-title mb-4 text-3xl">Lo Que Hacemos</h2>
+								<div class="space-y-4">
+									<div class="flex items-start gap-4">
+										<div class="badge badge-primary badge-lg mt-1 font-bold">
+											1
+										</div>
+										<p>
+											Crear y distribuir contenido educativo de alta calidad
+											adaptado al contexto y las necesidades de Colombia.
+										</p>
+									</div>
+									<div class="flex items-start gap-4">
+										<div class="badge badge-primary badge-lg mt-1 font-bold">
+											2
+										</div>
+										<p>
+											Desarrollar metodologías de enseñanza innovadoras que
+											combinan la sabiduría tradicional con la tecnología
+											moderna.
+										</p>
+									</div>
+									<div class="flex items-start gap-4">
+										<div class="badge badge-primary badge-lg mt-1 font-bold">
+											3
+										</div>
+										<p>
+											Construir comunidades de educadores y estudiantes para
+											compartir conocimientos y mejores prácticas.
+										</p>
+									</div>
+									<div class="flex items-start gap-4">
+										<div class="badge badge-primary badge-lg mt-1 font-bold">
+											4
+										</div>
+										<p>
+											Asociarnos con instituciones educativas para ampliar
+											nuestro alcance e impacto.
+										</p>
+									</div>
 								</div>
-								<p>
-									Making education available to all, regardless of
-									circumstances.
-								</p>
 							</div>
-							<div class="flex flex-col items-center text-center">
-								<div class="badge badge-accent badge-lg mb-2">Innovation</div>
-								<p>
-									Embracing new technologies and methodologies to enhance
-									learning.
-								</p>
-							</div>
-							<div class="flex flex-col items-center text-center">
-								<div class="badge badge-accent badge-lg mb-2">Community</div>
-								<p>Building strong networks of educators and learners.</p>
+							<div class="order-1 md:order-2">
+								<img
+									src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=2070&auto=format&fit=crop"
+									alt="What we do"
+									class="rounded-lg shadow-md"
+								/>
 							</div>
 						</div>
 					</div>
 				</div>
 
-				<div class="card bg-base-100 shadow-xl">
-					<div class="card-body">
-						<h2 class="card-title mb-4">Join Our Mission</h2>
-						<p class="mb-6">
-							We're always looking for passionate educators, content creators,
-							and volunteers who share our vision for transforming education in
-							Colombia. Whether you're a teacher, student, or someone who
-							believes in the power of education, there's a place for you in our
-							community.
+				<div class="text-center mb-12" data-aos="zoom-in">
+					<h2 class="text-4xl font-bold mb-4">Nuestros Valores</h2>
+				</div>
+				<div class="grid md:grid-cols-3 gap-6 mb-12">
+					<div
+						class="flex flex-col items-center text-center p-4"
+						data-aos="fade-up"
+						data-aos-delay="100"
+					>
+						<div
+							class="w-24 h-24 rounded-full bg-accent/10 flex items-center justify-center mb-4"
+						>
+							<img
+								src="https://img.icons8.com/?size=100&id=112494&format=png&color=000000"
+								alt="Accessibility"
+								class="w-16 h-16"
+							/>
+						</div>
+						<h3 class="font-bold text-lg mb-2">Accesibilidad</h3>
+						<p>
+							Hacer que la educación esté disponible para todos, sin importar
+							las circunstancias.
 						</p>
-						<div class="card-actions justify-center">
-							<a href="/contact" class="btn btn-primary">Contact Us</a>
-							<a href="/blog" class="btn btn-ghost">Read Our Blog</a>
+					</div>
+					<div
+						class="flex flex-col items-center text-center p-4"
+						data-aos="fade-up"
+						data-aos-delay="200"
+					>
+						<div
+							class="w-24 h-24 rounded-full bg-accent/10 flex items-center justify-center mb-4"
+						>
+							<img
+								src="https://img.icons8.com/?size=100&id=63691&format=png&color=000000"
+								alt="Innovation"
+								class="w-16 h-16"
+							/>
+						</div>
+						<h3 class="font-bold text-lg mb-2">Innovación</h3>
+						<p>
+							Adoptar nuevas tecnologías y metodologías para mejorar el
+							aprendizaje.
+						</p>
+					</div>
+					<div
+						class="flex flex-col items-center text-center p-4"
+						data-aos="fade-up"
+						data-aos-delay="300"
+					>
+						<div
+							class="w-24 h-24 rounded-full bg-accent/10 flex items-center justify-center mb-4"
+						>
+							<img
+								src="https://img.icons8.com/?size=100&id=12145&format=png&color=000000"
+								alt="Community"
+								class="w-16 h-16"
+							/>
+						</div>
+						<h3 class="font-bold text-lg mb-2">Comunidad</h3>
+						<p>Construir redes sólidas de educadores y estudiantes.</p>
+					</div>
+				</div>
+
+				<div
+					class="hero rounded-box"
+					style="background-image: url(https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=2070&auto=format&fit=crop);"
+					data-aos="zoom-in-up"
+				>
+					<div class="hero-overlay bg-opacity-70 rounded-box"></div>
+					<div class="hero-content text-center text-neutral-content py-12">
+						<div class="max-w-md">
+							<h2 class="mb-5 text-4xl font-bold">Únete a Nuestra Misión</h2>
+							<p class="mb-6">
+								Siempre estamos buscando educadores, creadores de contenido y
+								voluntarios apasionados que compartan nuestra visión de
+								transformar la educación en Colombia. Ya seas maestro,
+								estudiante o alguien que cree en el poder de la educación, hay
+								un lugar para ti en nuestra comunidad.
+							</p>
+							<div class="flex justify-center gap-4">
+								<a href="/contact" class="btn btn-primary">Contáctanos</a>
+								<a href="/blog" class="btn btn-ghost">Lee Nuestro Blog</a>
+							</div>
 						</div>
 					</div>
 				</div>
