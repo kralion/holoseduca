@@ -5,7 +5,7 @@ import Footer from "../components/Footer.astro";
 ---
 
 <!doctype html>
-<html lang="en" data-theme="light">
+<html lang="en" data-theme="holoseduca">
   <head>
     <BaseHead
       title="Contact HolosEduca"
@@ -18,9 +18,10 @@ import Footer from "../components/Footer.astro";
       <div class="hero bg-base-200 rounded-box p-8 mb-12">
         <div class="hero-content text-center">
           <div>
-            <h1 class="text-5xl font-bold mb-8">Contact Us</h1>
+            <h1 class="text-5xl font-bold mb-8">Contáctanos</h1>
             <p class="text-xl">
-              Have questions or want to collaborate? We'd love to hear from you.
+              Tienes preguntas o quieres colaborar? Nos encantaría escuchar de
+              ti.
             </p>
           </div>
         </div>
@@ -29,11 +30,11 @@ import Footer from "../components/Footer.astro";
       <div class="grid lg:grid-cols-2 gap-8">
         <div class="card bg-base-100 shadow-xl">
           <div class="card-body">
-            <h2 class="card-title text-2xl mb-6">Send Us a Message</h2>
+            <h2 class="card-title text-2xl mb-6">Envíanos un mensaje</h2>
             <form class="space-y-4">
               <div class="form-control">
                 <label class="label" for="name">
-                  <span class="label-text">Name</span>
+                  <span class="label-text">Nombre</span>
                 </label>
                 <input
                   type="text"
@@ -46,7 +47,7 @@ import Footer from "../components/Footer.astro";
 
               <div class="form-control">
                 <label class="label" for="email">
-                  <span class="label-text">Email</span>
+                  <span class="label-text">Correo electrónico</span>
                 </label>
                 <input
                   type="email"
@@ -59,37 +60,34 @@ import Footer from "../components/Footer.astro";
 
               <div class="form-control">
                 <label class="label" for="subject">
-                  <span class="label-text">Subject</span>
+                  <span class="label-text">Asunto</span>
                 </label>
                 <select
                   id="subject"
                   class="select select-bordered w-full"
                   required
                 >
-                  <option value="">Select a subject</option>
+                  <option value="">Selecciona un asunto</option>
                   <option value="collaboration"
-                    >Collaboration Opportunity</option
+                    >Oportunidad de colaboración</option
                   >
-                  <option value="volunteer">Volunteer Interest</option>
-                  <option value="support">Educational Support</option>
-                  <option value="other">Other</option>
+                  <option value="volunteer">Interés en voluntariado</option>
+                  <option value="support">Apoyo educativo</option>
+                  <option value="other">Otro</option>
                 </select>
               </div>
 
               <div class="form-control">
-                <label class="label" for="message">
-                  <span class="label-text">Message</span>
-                </label>
                 <textarea
                   id="message"
-                  class="textarea textarea-bordered h-32"
-                  placeholder="Your message here..."
+                  class="textarea textarea-bordered h-32 w-full"
+                  placeholder="Tu mensaje aquí..."
                   required></textarea>
               </div>
 
               <div class="form-control mt-6">
                 <button type="submit" class="btn btn-primary"
-                  >Send Message</button
+                  >Enviar mensaje</button
                 >
               </div>
             </form>
@@ -99,17 +97,19 @@ import Footer from "../components/Footer.astro";
         <div class="space-y-8">
           <div class="card bg-primary text-primary-content">
             <div class="card-body">
-              <h2 class="card-title text-2xl mb-4">Visit Our Office</h2>
+              <h2 class="card-title text-2xl mb-4">
+                Visítanos en nuestra oficina
+              </h2>
               <div class="space-y-2">
                 <p>
-                  <strong>Address:</strong><br />
-                  Calle Principal #123<br />
+                  <strong>Dirección:</strong><br />
+                  Calle 123 #123<br />
                   Bogotá, Colombia
                 </p>
                 <p>
-                  <strong>Office Hours:</strong><br />
-                  Monday - Friday: 9:00 AM - 6:00 PM<br />
-                  Saturday: 9:00 AM - 1:00 PM
+                  <strong>Horarios de oficina:</strong><br />
+                  Lunes - Viernes: 9:00 AM - 6:00 PM<br />
+                  Sábado: 9:00 AM - 1:00 PM
                 </p>
               </div>
             </div>
@@ -117,23 +117,25 @@ import Footer from "../components/Footer.astro";
 
           <div class="card bg-secondary text-secondary-content">
             <div class="card-body">
-              <h2 class="card-title text-2xl mb-4">Other Ways to Connect</h2>
+              <h2 class="card-title text-2xl mb-4">
+                Otras formas de contactarnos
+              </h2>
               <div class="space-y-4">
                 <div>
-                  <strong>Email:</strong><br />
+                  <strong>Correo electrónico:</strong><br />
                   <a
                     href="mailto:contact@holoseduca.org"
                     class="link link-hover">contact@holoseduca.org</a
                   >
                 </div>
                 <div>
-                  <strong>Phone:</strong><br />
+                  <strong>Teléfono:</strong><br />
                   <a href="tel:+571234567890" class="link link-hover"
                     >+57 (1) 234-567-890</a
                   >
                 </div>
                 <div>
-                  <strong>Social Media:</strong><br />
+                  <strong>Redes sociales:</strong><br />
                   <div class="flex gap-4 mt-2">
                     <a href="#" class="btn btn-circle btn-outline btn-sm">
                       <svg
@@ -179,10 +181,11 @@ import Footer from "../components/Footer.astro";
 
           <div class="card bg-accent text-accent-content">
             <div class="card-body">
-              <h2 class="card-title text-2xl mb-4">Quick Response</h2>
+              <h2 class="card-title text-2xl mb-4">Respuesta rápida</h2>
               <p>
-                We aim to respond to all inquiries within 24-48 business hours.
-                For urgent matters, please call our office directly.
+                Nos esforzamos por responder a todas las consultas dentro de
+                24-48 horas hábiles. Para asuntos urgentes, por favor llama a
+                nuestra oficina directamente.
               </p>
             </div>
           </div>
@@ -194,7 +197,9 @@ import Footer from "../components/Footer.astro";
     <script>
       document.querySelector("form")?.addEventListener("submit", (e) => {
         e.preventDefault();
-        alert("Thank you for your message! We'll get back to you soon.");
+        alert(
+          "¡Gracias por tu mensaje! Nos pondremos en contacto contigo pronto.",
+        );
         (e.target as HTMLFormElement).reset();
       });
     </script>

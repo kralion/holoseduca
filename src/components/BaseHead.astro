@@ -1,10 +1,11 @@
 ---
 // Import the global.css file here so that it is included on
 // all pages through the use of the <BaseHead /> component.
-import '../styles/global.css';
-import { SITE_TITLE } from '../consts';
-import FallbackImage from '../assets/blog-placeholder-1.jpg';
-import type { ImageMetadata } from 'astro';
+import "../styles/global.css";
+import "aos/dist/aos.css";
+import { SITE_TITLE } from "../consts";
+import FallbackImage from "../assets/blog-placeholder-1.jpg";
+import type { ImageMetadata } from "astro";
 
 interface Props {
 	title: string;
@@ -26,13 +27,25 @@ const { title, description, image = FallbackImage } = Astro.props;
 	rel="alternate"
 	type="application/rss+xml"
 	title={SITE_TITLE}
-	href={new URL('rss.xml', Astro.site)}
+	href={new URL("rss.xml", Astro.site)}
 />
 <meta name="generator" content={Astro.generator} />
 
 <!-- Font preloads -->
-<link rel="preload" href="/fonts/atkinson-regular.woff" as="font" type="font/woff" crossorigin />
-<link rel="preload" href="/fonts/atkinson-bold.woff" as="font" type="font/woff" crossorigin />
+<link
+	rel="preload"
+	href="/fonts/atkinson-regular.woff"
+	as="font"
+	type="font/woff"
+	crossorigin
+/>
+<link
+	rel="preload"
+	href="/fonts/atkinson-bold.woff"
+	as="font"
+	type="font/woff"
+	crossorigin
+/>
 
 <!-- Canonical URL -->
 <link rel="canonical" href={canonicalURL} />
@@ -55,3 +68,23 @@ const { title, description, image = FallbackImage } = Astro.props;
 <meta property="twitter:title" content={title} />
 <meta property="twitter:description" content={description} />
 <meta property="twitter:image" content={new URL(image.src, Astro.url)} />
+
+<!-- AOS Global Initialization -->
+<script>
+	import AOS from "aos";
+
+	// Initialize AOS when DOM is loaded
+	document.addEventListener("DOMContentLoaded", function () {
+		AOS.init({
+			duration: 800,
+			once: true,
+			offset: 100,
+			easing: "ease-in-out",
+		});
+	});
+
+	// Refresh AOS on page navigation (for SPAs)
+	document.addEventListener("astro:page-load", function () {
+		AOS.refresh();
+	});
+</script>

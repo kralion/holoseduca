@@ -20,6 +20,7 @@ Features:
 - ✅ Sitemap support
 - ✅ RSS Feed support
 - ✅ Markdown & MDX support
+- ✅ DaisyUI 5 integration for beautiful UI components
 
 ## 🚀 Project Structure
 
@@ -28,10 +29,12 @@ Inside of your Astro project, you'll see the following folders and files:
 ```text
 ├── public/
 ├── src/
-│   ├── components/
-│   ├── content/
-│   ├── layouts/
-│   └── pages/
+│   ├── components/
+│   ├── content/
+│   ├── layouts/
+│   └── pages/
+├── docs/
+│   └── daisyui.md
 ├── astro.config.mjs
 ├── README.md
 ├── package.json
@@ -43,6 +46,8 @@ Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page
 There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
 
 The `src/content/` directory contains "collections" of related Markdown and MDX documents. Use `getCollection()` to retrieve posts from `src/content/blog/`, and type-check your frontmatter using an optional schema. See [Astro's Content Collections docs](https://docs.astro.build/en/guides/content-collections/) to learn more.
+
+The `docs/` directory contains project documentation, including the [DaisyUI component documentation](docs/daisyui.md).
 
 Any static assets, like images, can be placed in the `public/` directory.
 
@@ -62,6 +67,8 @@ All commands are run from the root of the project, from a terminal:
 ## 👀 Want to learn more?
 
 Check out [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+
+For UI components, refer to our [DaisyUI documentation](docs/daisyui.md).
 
 ## Credit
 
