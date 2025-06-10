@@ -1,0 +1,34 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# HolosEduca Project Overview
+
+HolosEduca is a Colombian NGO focused on education. This project is built using modern web technologies to create an impactful educational platform.
+
+## Tech Stack
+- **Astro**: Main framework for building fast, content-focused websites
+- **DaisyUI + TailwindCSS**: UI components and styling
+- **Astro Content Collections**: Type-safe content management
+
+## Key Directories
+- `src/pages/`: Contains all route pages using Astro's file-based routing
+- `src/components/`: Reusable UI components
+- `src/layouts/`: Page layouts and templates
+- `src/content/`: Content collections and schemas
+- `src/styles/`: Global styles and Tailwind configurations
+- `src/assets/`: Static assets like images and fonts
+
+## Important Files
+- [astro.config.mjs](mdc:astro.config.mjs): Astro configuration including plugins and settings
+- [src/content.config.ts](mdc:src/content.config.ts): Content collection configurations
+- [src/consts.ts](mdc:src/consts.ts): Global constants and site configuration
+
+## Development Guidelines
+1. All new pages should be created in `src/pages/`
+2. Use Astro components for static content and React components for interactive elements
+3. Content should be managed through Astro Content Collections
+4. Follow DaisyUI component patterns for consistent UI
+5. Maintain Colombian Spanish as the primary language
+

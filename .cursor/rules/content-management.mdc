@@ -1,0 +1,35 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# Content Management Guide
+
+This guide explains how content is managed in the HolosEduca platform using Astro Content Collections.
+
+## Content Structure
+Content is organized in the `src/content/` directory and configured in [src/content.config.ts](mdc:src/content.config.ts).
+
+## Content Types
+1. **Blog Posts**: Educational articles and updates
+   - Location: `src/content/blog/`
+   - Format: Markdown files with frontmatter
+
+2. **Courses**: Educational course content
+   - Location: `src/content/courses/`
+   - Format: Markdown files with structured metadata
+
+3. **Team Members**: Staff and contributor information
+   - Location: `src/content/team/`
+   - Format: YAML files with bio and role information
+
+## Content Guidelines
+1. All content should be written in Colombian Spanish
+2. Use proper heading hierarchy (h1 -> h6)
+3. Include alt text for all images
+4. Tag content appropriately for categorization
+5. Follow SEO best practices in metadata
+
+## Content Validation
+Content is validated using TypeScript schemas defined in the content config. Always ensure your content matches these schemas before committing.
+

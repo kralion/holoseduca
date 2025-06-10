@@ -1,0 +1,38 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# Styling Guide
+
+This guide outlines the styling practices for HolosEduca using DaisyUI and TailwindCSS.
+
+## Theme Configuration
+- Primary colors represent HolosEduca's brand identity
+- Theme configuration is managed through TailwindCSS
+- DaisyUI provides pre-built components with consistent styling
+
+## Component Styling
+1. **Base Components**
+   - Use DaisyUI components as building blocks
+   - Follow the component naming convention: `<ComponentName>.astro`
+   - Maintain responsive design patterns
+
+2. **Custom Styling**
+   - Custom styles should be in `src/styles/`
+   - Use Tailwind's utility classes when possible
+   - Create custom components for repeated patterns
+
+## Best Practices
+1. Use semantic HTML elements
+2. Follow accessibility guidelines (WCAG 2.1)
+3. Implement responsive design using Tailwind breakpoints
+4. Maintain consistent spacing using Tailwind's spacing scale
+5. Use DaisyUI's theme variables for color consistency
+
+## Component Examples
+- Buttons: Use DaisyUI's button components with appropriate variants
+- Forms: Implement form elements using DaisyUI's form components
+- Layout: Use Tailwind's grid and flex utilities for layout
+- Typography: Follow the established type scale and hierarchy
+
