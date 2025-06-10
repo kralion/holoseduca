@@ -1,0 +1,102 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+---
+
+<!doctype html>
+<html lang="en" data-theme="holoseduca">
+  <head>
+    <BaseHead
+      title="Política de Privacidad | HolosEduca"
+      description="Política de Privacidad de HolosEduca"
+    />
+  </head>
+  <body class="min-h-screen flex flex-col">
+    <Header />
+    <main class="container mx-auto px-4 py-12 max-w-4xl">
+      <h1 class="text-4xl font-bold mb-8">Política de Privacidad</h1>
+
+      <div class="prose prose-lg max-w-none">
+        <p class="text-lg mb-6">
+          Última actualización: {new Date().toLocaleDateString("es-CO")}
+        </p>
+
+        <section class="mb-8">
+          <h2 class="text-2xl font-semibold mb-4">1. Introducción</h2>
+          <p>
+            HolosEduca ("nosotros", "nuestro" o "la organización") se compromete
+            a proteger la privacidad de los usuarios que acceden a nuestro sitio
+            web y utilizan nuestros servicios educativos. Esta política de
+            privacidad explica cómo recopilamos, utilizamos y protegemos su
+            información personal.
+          </p>
+        </section>
+
+        <section class="mb-8">
+          <h2 class="text-2xl font-semibold mb-4">
+            2. Información que Recopilamos
+          </h2>
+          <p>Recopilamos la siguiente información:</p>
+          <ul class="list-disc pl-6 mb-4">
+            <li>
+              Información de contacto (nombre, correo electrónico, teléfono)
+            </li>
+            <li>Información demográfica básica</li>
+            <li>Información académica relevante</li>
+            <li>Datos de uso del sitio web</li>
+          </ul>
+        </section>
+
+        <section class="mb-8">
+          <h2 class="text-2xl font-semibold mb-4">3. Uso de la Información</h2>
+          <p>Utilizamos su información personal para:</p>
+          <ul class="list-disc pl-6 mb-4">
+            <li>Proporcionar servicios educativos</li>
+            <li>Mejorar nuestros programas y contenidos</li>
+            <li>Comunicarnos con usted sobre nuestros servicios</li>
+            <li>Cumplir con requisitos legales y regulatorios</li>
+          </ul>
+        </section>
+
+        <section class="mb-8">
+          <h2 class="text-2xl font-semibold mb-4">4. Protección de Datos</h2>
+          <p>
+            Implementamos medidas de seguridad técnicas y organizativas
+            apropiadas para proteger sus datos personales contra el acceso no
+            autorizado, la modificación, divulgación o destrucción. Cumplimos
+            con la Ley 1581 de 2012 de Protección de Datos Personales de
+            Colombia.
+          </p>
+        </section>
+
+        <section class="mb-8">
+          <h2 class="text-2xl font-semibold mb-4">5. Derechos del Usuario</h2>
+          <p>Como usuario, usted tiene derecho a:</p>
+          <ul class="list-disc pl-6 mb-4">
+            <li>Acceder a sus datos personales</li>
+            <li>Corregir información inexacta</li>
+            <li>Solicitar la eliminación de sus datos</li>
+            <li>Oponerse al procesamiento de sus datos</li>
+            <li>
+              Presentar una queja ante la Superintendencia de Industria y
+              Comercio
+            </li>
+          </ul>
+        </section>
+
+        <section class="mb-8">
+          <h2 class="text-2xl font-semibold mb-4">6. Contacto</h2>
+          <p>
+            Para cualquier consulta sobre esta política de privacidad o para
+            ejercer sus derechos, puede contactarnos en:
+          </p>
+          <p class="mt-2">
+            Email: contact@holoseduca.org<br />
+            Teléfono: +57 (1) 234-567-890<br />
+            Dirección: Calle 123 #123, Bogotá, Colombia
+          </p>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>

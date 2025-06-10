@@ -1,0 +1,124 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+---
+
+<!doctype html>
+<html lang="en" data-theme="holoseduca">
+  <head>
+    <BaseHead
+      title="Términos y Condiciones | HolosEduca"
+      description="Términos y Condiciones de HolosEduca"
+    />
+  </head>
+  <body class="min-h-screen flex flex-col">
+    <Header />
+    <main class="container mx-auto px-4 py-12 max-w-4xl">
+      <h1 class="text-4xl font-bold mb-8">Términos y Condiciones</h1>
+
+      <div class="prose prose-lg max-w-none">
+        <p class="text-lg mb-6">
+          Última actualización: {new Date().toLocaleDateString("es-CO")}
+        </p>
+
+        <section class="mb-8">
+          <h2 class="text-2xl font-semibold mb-4">
+            1. Aceptación de los Términos
+          </h2>
+          <p>
+            Al acceder y utilizar el sitio web de HolosEduca, usted acepta estos
+            términos y condiciones en su totalidad. Si no está de acuerdo con
+            estos términos, por favor no utilice nuestro sitio web o servicios.
+          </p>
+        </section>
+
+        <section class="mb-8">
+          <h2 class="text-2xl font-semibold mb-4">
+            2. Descripción del Servicio
+          </h2>
+          <p>
+            HolosEduca es una organización sin ánimo de lucro dedicada a
+            proporcionar servicios educativos en Colombia. Nuestros servicios
+            incluyen, pero no se limitan a:
+          </p>
+          <ul class="list-disc pl-6 mb-4">
+            <li>Recursos educativos en línea</li>
+            <li>Programas de formación</li>
+            <li>Materiales didácticos</li>
+            <li>Asesoría educativa</li>
+          </ul>
+        </section>
+
+        <section class="mb-8">
+          <h2 class="text-2xl font-semibold mb-4">3. Uso Apropiado</h2>
+          <p>Al utilizar nuestros servicios, usted se compromete a:</p>
+          <ul class="list-disc pl-6 mb-4">
+            <li>Proporcionar información verdadera y actualizada</li>
+            <li>Utilizar el contenido únicamente con fines educativos</li>
+            <li>
+              No realizar actividades que puedan dañar, sobrecargar o deteriorar
+              el sitio
+            </li>
+            <li>Respetar los derechos de propiedad intelectual</li>
+          </ul>
+        </section>
+
+        <section class="mb-8">
+          <h2 class="text-2xl font-semibold mb-4">4. Propiedad Intelectual</h2>
+          <p>
+            Todo el contenido presente en el sitio web de HolosEduca, incluyendo
+            pero no limitado a textos, gráficos, logotipos, imágenes, videos, y
+            software, está protegido por derechos de autor y otras leyes de
+            propiedad intelectual. El uso no autorizado de estos materiales está
+            prohibido.
+          </p>
+        </section>
+
+        <section class="mb-8">
+          <h2 class="text-2xl font-semibold mb-4">
+            5. Limitación de Responsabilidad
+          </h2>
+          <p>
+            HolosEduca proporciona sus servicios "tal cual" y no ofrece
+            garantías de ningún tipo. No nos hacemos responsables por daños
+            directos, indirectos, incidentales o consecuentes que puedan surgir
+            del uso de nuestros servicios.
+          </p>
+        </section>
+
+        <section class="mb-8">
+          <h2 class="text-2xl font-semibold mb-4">6. Modificaciones</h2>
+          <p>
+            Nos reservamos el derecho de modificar estos términos y condiciones
+            en cualquier momento. Los cambios entrarán en vigor inmediatamente
+            después de su publicación en el sitio web. El uso continuado de
+            nuestros servicios después de dichos cambios constituirá su
+            aceptación de los mismos.
+          </p>
+        </section>
+
+        <section class="mb-8">
+          <h2 class="text-2xl font-semibold mb-4">7. Ley Aplicable</h2>
+          <p>
+            Estos términos y condiciones se rigen por las leyes de la República
+            de Colombia. Cualquier disputa relacionada con estos términos será
+            resuelta por los tribunales competentes en Bogotá, Colombia.
+          </p>
+        </section>
+
+        <section class="mb-8">
+          <h2 class="text-2xl font-semibold mb-4">8. Contacto</h2>
+          <p>
+            Si tiene alguna pregunta sobre estos términos y condiciones, puede
+            contactarnos en:
+          </p>
+          <p class="mt-2">
+            Email: contact@holoseduca.org<br />
+            Teléfono: +57 (1) 234-567-890<br />
+            Dirección: Calle 123 #123, Bogotá, Colombia
+          </p>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
