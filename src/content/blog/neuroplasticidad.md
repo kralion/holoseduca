@@ -1,7 +1,7 @@
 ---
 title: "Neuroplasticidad: Cómo Nuestro Cerebro Aprende y se Transforma"
 description: "La neuroplasticidad es la clave para un aprendizaje efectivo. Descubre cómo las estrategias DUA pueden potenciar las habilidades cognitivas."
-pubDate: "Jun 12 2024"
+pubDate: "Jun 11 2025"
 heroImage: "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?q=80&w=2148&auto=format&fit=crop"
 ---
 

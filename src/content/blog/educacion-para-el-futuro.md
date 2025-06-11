@@ -1,7 +1,7 @@
 ---
 title: "Educando para un Futuro Sostenible: Los ODS en Acción"
 description: "La educación es clave para construir un mundo más sostenible. Así es como integramos los Objetivos de Desarrollo Sostenible (ODS) en nuestros proyectos."
-pubDate: "Jun 14 2024"
+pubDate: "Jun 11 2025"
 heroImage: "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?q=80&w=2148&auto=format&fit=crop"
 ---
 

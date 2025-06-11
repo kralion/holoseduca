@@ -1,5 +1,6 @@
 ---
 import BaseHead from "../components/BaseHead.astro";
+import CTA from "../components/CTA.astro";
 import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
 ---
@@ -30,11 +31,13 @@ import Header from "../components/Header.astro";
 						/>
 						<div class="text-center md:text-left">
 							<h1 class="text-3xl md:text-5xl font-bold mb-4 md:mb-8">
-								Acerca de HolosEduca
+								Quiénes Somos ?
 							</h1>
 							<p class="text-lg md:text-xl">
-								Transformando la educación en Colombia a través de soluciones de
-								aprendizaje innovadoras y accesibles.
+								Somos una fundación educativa que busca transformar la educación
+								en Colombia a través de soluciones de aprendizaje innovadoras y
+								accesibles, con un enfoque en la neuroplasticidad y el
+								desarrollo de habilidades cognitivas.
 							</p>
 						</div>
 					</div>
@@ -49,12 +52,12 @@ import Header from "../components/Header.astro";
 							<img
 								src="https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=2070&auto=format&fit=crop"
 								alt="Our Mission"
-								class="rounded-xl h-48 w-full object-cover"
+								class="rounded-xl h-64 w-full object-cover"
 							/>
 						</figure>
 						<div class="card-body">
-							<h2 class="card-title text-2xl">Nuestra Misión</h2>
-							<p>
+							<h2 class="card-title text-3xl">Nuestra Misión</h2>
+							<p class="text-lg">
 								En HolosEduca, nos dedicamos a hacer que la educación de calidad
 								sea accesible para todos los colombianos. Creemos que la
 								educación es la clave para el crecimiento personal y el
@@ -71,12 +74,12 @@ import Header from "../components/Header.astro";
 							<img
 								src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2071&auto=format&fit=crop"
 								alt="Our Vision"
-								class="rounded-xl h-48 w-full object-cover"
+								class="rounded-xl h-64 w-full object-cover"
 							/>
 						</figure>
 						<div class="card-body">
-							<h2 class="card-title">Nuestra Visión</h2>
-							<p>
+							<h2 class="card-title text-3xl">Nuestra Visión</h2>
+							<p class="text-lg">
 								Visualizamos una Colombia donde cada persona tenga acceso a
 								recursos y oportunidades educativas de alta calidad, sin
 								importar su ubicación o situación económica.
@@ -203,32 +206,9 @@ import Header from "../components/Header.astro";
 						<p>Construir redes sólidas de educadores y estudiantes.</p>
 					</div>
 				</div>
-
-				<div
-					class="hero rounded-box"
-					style="background-image: url(https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=2070&auto=format&fit=crop);"
-					data-aos="zoom-in-up"
-				>
-					<div class="hero-overlay bg-opacity-80 rounded-box"></div>
-					<div class="hero-content text-center text-neutral-content py-12">
-						<div class="max-w-md">
-							<h2 class="mb-5 text-4xl font-bold">Únete a Nuestra Misión</h2>
-							<p class="mb-6 backdrop-blur-sm rounded">
-								Siempre estamos buscando educadores, creadores de contenido y
-								voluntarios apasionados que compartan nuestra visión de
-								transformar la educación en Colombia. Ya seas maestro,
-								estudiante o alguien que cree en el poder de la educación, hay
-								un lugar para ti en nuestra comunidad.
-							</p>
-							<div class="flex justify-center gap-4">
-								<a href="/contact" class="btn btn-primary">Contáctanos</a>
-								<a href="/blog" class="btn btn-outline">Lee Nuestro Blog</a>
-							</div>
-						</div>
-					</div>
-				</div>
 			</div>
 		</main>
+		<CTA />
 		<Footer />
 	</body>
 </html>

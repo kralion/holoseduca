@@ -3,124 +3,414 @@ import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+import CTA from "../components/CTA.astro";
 ---
 
 <!doctype html>
-<html lang="en" data-theme="holoseduca">
+<html lang="es" data-theme="holoseduca">
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 	</head>
 	<body class="min-h-screen flex flex-col">
 		<Header />
-		<main class="flex-grow container mx-auto px-4 py-8">
-			<div class="hero bg-base-200 rounded-box p-8 mb-8" data-aos="fade-left">
-				<div class="hero-content text-center">
-					<div class="max-w-2xl">
-						<h1 class="text-5xl font-bold mb-8">🎓 Bienvenido a HolosEduca</h1>
-						<p class="text-xl mb-6">
-							Transformando la educación en Colombia a través de soluciones
-							educativas innovadoras y recursos accesibles.
-						</p>
-						<a href="/about" class="btn btn-primary">Más información</a>
-					</div>
-				</div>
-			</div>
-
-			<div class="grid md:grid-cols-2 gap-8 items-center mb-12">
-				<div data-aos="fade-right">
-					<img
-						src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=2070&auto=format&fit=crop"
-						alt="Estudiantes sonriendo"
-						class="rounded-lg shadow-lg"
-					/>
-				</div>
-				<div data-aos="fade-left">
-					<h2 class="text-3xl font-bold mb-4">Nuestra Metodología</h2>
-					<p class="text-lg">
-						Creemos en un enfoque holístico de la educación. Nuestros programas
-						están diseñados para fomentar no solo el conocimiento académico,
-						sino también la inteligencia emocional, la creatividad y las
-						habilidades para la vida. Preparamos a los estudiantes para que sean
-						ciudadanos del mundo, conscientes y comprometidos.
+		<div
+			class="hero min-h-screen"
+			data-aos="fade-in"
+			style="background-image: url(https://img.daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.webp);"
+		>
+			<div class="hero-overlay"></div>
+			<div class="hero-content text-neutral-content text-center">
+				<div class="max-w-4xl">
+					<h1 class="mb-5 md:text-6xl text-4xl font-bold">
+						Bienvenido a HolosEduca
+					</h1>
+					<p class="mb-5 text-2xl md:text-3xl">
+						Transformando la educación en Colombia a través de soluciones
+						educativas innovadoras y recursos accesibles.
 					</p>
+					<a href="/about" class="btn btn-primary btn-xl">Más información</a>
 				</div>
 			</div>
-
-			<div class="grid md:grid-cols-2 gap-8">
-				<div class="card bg-base-100 shadow-xl" data-aos="fade-up">
-					<div class="card-body">
-						<h2 class="card-title text-2xl font-bold mb-4">Misión</h2>
-						<p class="text-lg">
-							La FHE tiene como misión brindar una educación integral por medio
-							de apoyo educativo, psicológico y comunitario en los niños y
-							jóvenes, fomentando su desarrollo emocional, cognitivo y social. A
-							través de programas innovadores buscando empoderar a las nuevas
-							generaciones para que alcancen su máximo potencial y construyan
-							comunidades resilientes y armoniosas.
-						</p>
-					</div>
-				</div>
-
-				<div
-					class="card bg-base-100 shadow-xl"
-					data-aos="fade-up"
-					data-aos-delay="200"
-				>
-					<div class="card-body">
-						<h2 class="card-title text-2xl font-bold mb-4">Visión</h2>
-						<p class="text-lg">
-							Ser líderes en educación integral y apoyo psicológico para niños y
-							jóvenes, integrando metodologías holísticas innovadoras para
-							potenciar el aprendizaje, el bienestar emocional y la
-							transformación social. Aspiramos crear generaciones preparadas
-							para enfrentar los desafíos del futuro.
-						</p>
-					</div>
-				</div>
-			</div>
-
-			<div class="divider my-12">Recursos destacados</div>
-
-			<div class="grid md:grid-cols-3 gap-6">
-				<div class="card bg-base-100 shadow-xl" data-aos="zoom-in">
-					<div class="card-body">
-						<h3 class="card-title">Materiales educativos</h3>
-						<p>Accede a nuestra colección de recursos educativos.</p>
-						<div class="card-actions justify-end">
-							<button class="btn btn-primary btn-sm">Explorar</button>
+		</div>
+		<main class="flex-grow w-full">
+			<!-- Section 1: Nuestros Pilares -->
+			<section class="py-16 bg-base-200 md:py-24">
+				<div class="container px-4 mx-auto md:px-8">
+					<h2 class="mb-12 text-4xl font-bold text-center" data-aos="fade-up">
+						Nuestros Pilares Fundamentales
+					</h2>
+					<div class="grid gap-8 md:grid-cols-3">
+						<!-- Pillar 1 -->
+						<div
+							class="text-center card bg-base-100 shadow-xl"
+							data-aos="fade-up"
+							data-aos-delay="100"
+						>
+							<figure class="px-10 pt-10">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									fill="none"
+									viewBox="0 0 24 24"
+									stroke-width="1.5"
+									stroke="currentColor"
+									class="w-20 h-20 text-primary"
+								>
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25"
+									></path>
+								</svg>
+							</figure>
+							<div class="items-center text-center card-body">
+								<h3 class="text-2xl card-title">Apoyo Educativo</h3>
+								<p>
+									Reforzamos el aprendizaje con tutorías personalizadas y
+									material didáctico innovador.
+								</p>
+							</div>
+						</div>
+						<!-- Pillar 2 -->
+						<div
+							class="text-center card bg-base-100 shadow-xl"
+							data-aos="fade-up"
+							data-aos-delay="200"
+						>
+							<figure class="px-10 pt-10">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									fill="none"
+									viewBox="0 0 24 24"
+									stroke-width="1.5"
+									stroke="currentColor"
+									class="w-20 h-20 text-primary"
+								>
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
+									></path>
+								</svg>
+							</figure>
+							<div class="items-center text-center card-body">
+								<h3 class="text-2xl card-title">Apoyo Psicológico</h3>
+								<p>
+									Fomentamos el bienestar emocional y la salud mental de
+									nuestros estudiantes.
+								</p>
+							</div>
+						</div>
+						<!-- Pillar 3 -->
+						<div
+							class="text-center card bg-base-100 shadow-xl"
+							data-aos="fade-up"
+							data-aos-delay="300"
+						>
+							<figure class="px-10 pt-10">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									fill="none"
+									viewBox="0 0 24 24"
+									stroke-width="1.5"
+									stroke="currentColor"
+									class="w-20 h-20 text-primary"
+								>
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										d="M18 18.72a9.094 9.094 0 0 0-12 0m12 0a9.094 9.094 0 0 0-12 0m12 0c.543 0 1.055.093 1.543.262m-12.086 0c.488-.169 1-.262 1.543-.262m9 0a9.094 9.094 0 0 0-9-9 9.094 9.094 0 0 0-9 9m18 0c0 1.146-.223 2.233-.634 3.224M3.634 19.224A9.094 9.094 0 0 1 3 18m18 0a9.094 9.094 0 0 0-3.634-1.224M12 14.25a3.75 3.75 0 1 0 0-7.5 3.75 3.75 0 0 0 0 7.5z"
+									></path>
+								</svg>
+							</figure>
+							<div class="items-center text-center card-body">
+								<h3 class="text-2xl card-title">Apoyo Comunitario</h3>
+								<p>
+									Involucramos a las familias y comunidades para crear un
+									entorno de aprendizaje sólido.
+								</p>
+							</div>
 						</div>
 					</div>
 				</div>
+			</section>
 
-				<div
-					class="card bg-base-100 shadow-xl"
-					data-aos="zoom-in"
-					data-aos-delay="200"
-				>
-					<div class="card-body">
-						<h3 class="card-title">Herramientas para educadores</h3>
-						<p>Recursos y herramientas diseñadas para educadores.</p>
-						<div class="card-actions justify-end">
-							<button class="btn btn-primary btn-sm">Explorar</button>
+			<!-- Section 2: Ruta de Aprendizaje (Timeline) -->
+			<section class="py-16 md:py-24">
+				<div class="container px-4 mx-auto md:px-8">
+					<h2 class="mb-16 text-4xl font-bold text-center" data-aos="fade-up">
+						Nuestra Ruta de Aprendizaje
+					</h2>
+					<ul
+						class="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical"
+					>
+						<li>
+							<div class="timeline-middle">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 20 20"
+									fill="currentColor"
+									class="w-5 h-5"
+									><path
+										fill-rule="evenodd"
+										d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+										clip-rule="evenodd"></path></svg
+								>
+							</div>
+							<div
+								class="mb-10 timeline-start md:text-end"
+								data-aos="fade-right"
+							>
+								<time class="italic font-mono">Paso 1</time>
+								<div class="text-lg font-black">Diagnóstico Integral</div>
+								Realizamos una evaluación completa para entender las necesidades
+								académicas, emocionales y sociales de cada estudiante. Este paso
+								es crucial para identificar las áreas de mejora y las fortalezas
+								individuales, permitiéndonos personalizar el enfoque educativo para
+								maximizar el potencial de cada alumno.
+							</div>
+							<hr />
+						</li>
+						<li>
+							<hr />
+							<div class="timeline-middle">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 20 20"
+									fill="currentColor"
+									class="w-5 h-5"
+									><path
+										fill-rule="evenodd"
+										d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+										clip-rule="evenodd"></path></svg
+								>
+							</div>
+							<div class="mb-10 timeline-end" data-aos="fade-left">
+								<time class="italic font-mono">Paso 2</time>
+								<div class="text-lg font-black">
+									Plan de Acción Personalizado
+								</div>
+								Diseñamos un plan único que combina apoyo educativo, psicológico
+								y actividades de desarrollo personal. Este plan se adapta a las necesidades
+								específicas de cada estudiante, asegurando que reciban la orientación
+								y los recursos necesarios para superar sus desafíos y alcanzar sus
+								metas académicas y personales.
+							</div>
+							<hr />
+						</li>
+						<li>
+							<hr />
+							<div class="timeline-middle">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 20 20"
+									fill="currentColor"
+									class="w-5 h-5"
+									><path
+										fill-rule="evenodd"
+										d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+										clip-rule="evenodd"></path></svg
+								>
+							</div>
+							<div
+								class="mb-10 timeline-start md:text-end"
+								data-aos="fade-right"
+							>
+								<time class="italic font-mono">Paso 3</time>
+								<div class="text-lg font-black">
+									Implementación y Acompañamiento
+								</div>
+								Ejecutamos el plan con el apoyo constante de nuestros profesionales
+								y mentores. Durante esta fase, proporcionamos seguimiento continuo
+								y ajustes al plan según sea necesario, asegurando que cada estudiante
+								reciba el soporte adecuado para progresar de manera efectiva en su
+								aprendizaje y desarrollo personal.
+							</div>
+							<hr />
+						</li>
+						<li>
+							<hr />
+							<div class="timeline-middle">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 20 20"
+									fill="currentColor"
+									class="w-5 h-5"
+									><path
+										fill-rule="evenodd"
+										d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+										clip-rule="evenodd"></path></svg
+								>
+							</div>
+							<div class="mb-10 timeline-end" data-aos="fade-left">
+								<time class="italic font-mono">Paso 4</time>
+								<div class="text-lg font-black">Impacto y Futuro</div>
+								Medimos el progreso y empoderamos a los estudiantes para que sean
+								agentes de cambio en sus comunidades. Al final de este proceso, los
+								estudiantes no solo han mejorado sus habilidades académicas, sino
+								que también están preparados para contribuir positivamente a la sociedad,
+								utilizando sus conocimientos y experiencias para inspirar y liderar
+								a otros.
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+			<!-- Section 3: Programas Destacados (Carousel) -->
+			<section class="py-16 bg-base-200 md:py-24">
+				<div class="container px-4 mx-auto md:px-8">
+					<h2 class="mb-12 text-4xl font-bold text-center" data-aos="fade-up">
+						Programas Destacados
+					</h2>
+					<div class="gap-4 carousel rounded-box">
+						<div class="w-full carousel-item md:w-1/3" data-aos="zoom-in">
+							<div class="shadow-xl card bg-base-100 image-full">
+								<figure>
+									<img
+										src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=2070&auto=format&fit=crop"
+										alt="Programa 1"
+									/>
+								</figure>
+								<div class="justify-end card-body">
+									<h3 class="text-2xl card-title">Mentes Curiosas</h3>
+									<p class="text-lg">
+										Fomentamos la pasión por la ciencia y la tecnología a través
+										de proyectos prácticos y divertidos.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div
+							class="w-full carousel-item md:w-1/3"
+							data-aos="zoom-in"
+							data-aos-delay="100"
+						>
+							<div class="shadow-xl card bg-base-100 image-full">
+								<figure>
+									<img
+										src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=2070&auto=format&fit=crop"
+										alt="Programa 2"
+									/>
+								</figure>
+								<div class="justify-end card-body">
+									<h3 class="text-2xl card-title">ExpresArte</h3>
+									<p class="text-lg">
+										Desarrollamos la creatividad y la expresión artística como
+										herramientas de autoconocimiento y comunicación.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div
+							class="w-full carousel-item md:w-1/3"
+							data-aos="zoom-in"
+							data-aos-delay="200"
+						>
+							<div class="shadow-xl card bg-base-100 image-full">
+								<figure>
+									<img
+										src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2071&auto=format&fit=crop"
+										alt="Programa 3"
+									/>
+								</figure>
+								<div class="justify-end card-body">
+									<h3 class="text-2xl card-title">Líderes del Mañana</h3>
+									<p class="text-lg">
+										Formamos a jóvenes con habilidades de liderazgo,
+										emprendimiento y conciencia social.
+									</p>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
+			</section>
 
-				<div
-					class="card bg-base-100 shadow-xl"
-					data-aos="zoom-in"
-					data-aos-delay="400"
-				>
-					<div class="card-body">
-						<h3 class="card-title">Comunidad</h3>
-						<p>Conecta con otros educadores y estudiantes.</p>
-						<div class="card-actions justify-end">
-							<button class="btn btn-primary btn-sm">Únete</button>
+			<!-- Section 4: Nuestra Comunidad (Stats and Badges) -->
+			<section class="py-16 md:py-24">
+				<div class="container px-4 mx-auto text-center md:px-8">
+					<h2 class="mb-4 text-4xl font-bold" data-aos="fade-up">
+						Únete a Nuestra Comunidad
+					</h2>
+					<p
+						class="max-w-3xl mx-auto mb-12 text-xl"
+						data-aos="fade-up"
+						data-aos-delay="100"
+					>
+						Somos una red creciente de estudiantes, educadores y voluntarios
+						comprometidos con la transformación educativa en Colombia.
+					</p>
+					<div
+						class="stats stats-vertical lg:stats-horizontal shadow"
+						data-aos="fade-up"
+						data-aos-delay="200"
+					>
+						<div class="stat">
+							<div class="stat-figure text-primary">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									fill="none"
+									viewBox="0 0 24 24"
+									class="inline-block w-8 h-8 stroke-current"
+									><path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										stroke-width="2"
+										d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.653-.28-1.254-.75-1.664M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.653.28-1.254.75-1.664M9 7h6m-3-3v6"
+									></path></svg
+								>
+							</div>
+							<div class="stat-title">Estudiantes</div>
+							<div class="stat-value">500+</div>
+							<div class="stat-desc">Impactados en 2025</div>
+						</div>
+
+						<div class="stat">
+							<div class="stat-figure text-secondary">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									fill="none"
+									viewBox="0 0 24 24"
+									class="inline-block w-8 h-8 stroke-current"
+									><path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										stroke-width="2"
+										d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg
+								>
+							</div>
+							<div class="stat-title">Voluntarios</div>
+							<div class="stat-value">100+</div>
+							<div class="stat-desc">Comprometidos con la causa</div>
+						</div>
+
+						<div class="stat">
+							<div class="stat-figure text-secondary">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									fill="none"
+									viewBox="0 0 24 24"
+									class="inline-block w-8 h-8 stroke-current"
+									><path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										stroke-width="2"
+										d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m12 0a2 2 0 100-4m0 4a2 2 0 110-4"
+									></path></svg
+								>
+							</div>
+							<div class="stat-title">Aliados</div>
+							<div class="stat-value">20+</div>
+							<div class="stat-desc">Instituciones y empresas</div>
 						</div>
 					</div>
+					<div class="mt-12" data-aos="fade-up" data-aos-delay="300">
+						<a href="/contact" class="btn btn-primary btn-lg">¡Involúcrate!</a>
+					</div>
 				</div>
-			</div>
+			</section>
 		</main>
+		<CTA />
 		<Footer />
 	</body>
 </html>

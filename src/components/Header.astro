@@ -8,8 +8,33 @@ import { Image } from "astro:assets";
 	<input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
 	<div class="drawer-content flex flex-col">
 		<!-- Navbar -->
-		<div class="navbar bg-base-100 shadow-lg md:px-8">
-			<div class="flex-none lg:hidden">
+		<div class="navbar bg-base-100 shadow md:p-8">
+			<a
+				href="/"
+				class="flex navbar-start md:navbar-start items-center md:gap-2"
+			>
+				<Image
+					src="/logo.png"
+					class="hidden md:block"
+					alt="HolosEduca"
+					width={60}
+					height={60}
+				/>
+				<Image
+					src="/logo-text.jpg"
+					class="md:hidden"
+					alt="HolosEduca"
+					width={60}
+					height={60}
+				/>
+				<div class="flex flex-col">
+					<h3 class="text-2xl font-bold text-neutral">{SITE_TITLE}</h3>
+					<p class="text-sm hidden md:block text-gray-500">
+						Camino hacia el equilibrio integral
+					</p>
+				</div>
+			</a>
+			<div class="flex-none lg:hidden navbar-end">
 				<label
 					for="my-drawer-3"
 					aria-label="open sidebar"
@@ -30,11 +55,6 @@ import { Image } from "astro:assets";
 					</svg>
 				</label>
 			</div>
-
-			<a href="/" class="flex navbar-end md:navbar-start items-center gap-2">
-				<Image src="/logo.png" alt="HolosEduca" width={100} height={100} />
-				<h3 class="hidden lg:block text-3xl font-bold">{SITE_TITLE}</h3>
-			</a>
 
 			<div class="navbar-center hidden lg:flex">
 				<ul class="menu menu-horizontal px-1 gap-2">
@@ -91,8 +111,8 @@ import { Image } from "astro:assets";
 	<div class="drawer-side">
 		<label for="my-drawer-3" aria-label="close sidebar" class="drawer-overlay"
 		></label>
-		<ul class="menu p-4 w-80 space-y-4 text-xl min-h-full bg-base-200">
-			<Image src="/logo.png" alt="HolosEduca" width={150} height={150} />
+		<ul class="menu p-4 w-80 space-y-4 text-xl min-h-full bg-base-100">
+			<Image src="/logo-text.jpg" alt="HolosEduca" width={120} height={120} />
 			<li><a href="/">Inicio</a></li>
 			<li><a href="/about">Sobre nosotros</a></li>
 			<li><a href="/services">Metodología</a></li>
