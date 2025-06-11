@@ -1,13 +1,13 @@
 @font-face {
   font-family: 'AtkinsonBold';
-  src: url('/public/fonts/atkinson-bold.woff') format('woff');
+  src: url('/fonts/atkinson-bold.woff') format('woff');
   font-weight: 800;
   font-display: swap;
 }
 
 @font-face {
   font-family: 'AtkinsonRegular';
-  src: url('/public/fonts/atkinson-regular.woff') format('woff');
+  src: url('/fonts/atkinson-regular.woff') format('woff');
   font-weight: 400;
   font-display: swap;
 }
