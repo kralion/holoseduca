@@ -8,7 +8,7 @@ import { Image } from "astro:assets";
 	<input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
 	<div class="drawer-content flex flex-col">
 		<!-- Navbar -->
-		<div class="navbar bg-base-100 shadow md:p-8">
+		<div class="navbar bg-base-100 shadow md:p-8 p-4">
 			<a
 				href="/"
 				class="flex navbar-start md:navbar-start items-center md:gap-2"
@@ -22,13 +22,13 @@ import { Image } from "astro:assets";
 				/>
 				<Image
 					src="/logo-text.jpg"
-					class="md:hidden"
+					class="md:hidden rounded-box"
 					alt="HolosEduca"
-					width={60}
-					height={60}
+					width={50}
+					height={50}
 				/>
 				<div class="flex flex-col">
-					<h3 class="text-2xl font-bold text-neutral">{SITE_TITLE}</h3>
+					<h3 class="text-2xl pl-2 md:pl-0 font-bold">{SITE_TITLE}</h3>
 					<p class="text-sm hidden md:block text-gray-500">
 						Camino hacia el equilibrio integral
 					</p>
@@ -112,7 +112,13 @@ import { Image } from "astro:assets";
 		<label for="my-drawer-3" aria-label="close sidebar" class="drawer-overlay"
 		></label>
 		<ul class="menu p-4 w-80 space-y-4 text-xl min-h-full bg-base-100">
-			<Image src="/logo-text.jpg" alt="HolosEduca" width={120} height={120} />
+			<Image
+				src="/logo-text.jpg"
+				alt="HolosEduca"
+				class="rounded-box"
+				width={120}
+				height={120}
+			/>
 			<li><a href="/">Inicio</a></li>
 			<li><a href="/about">Sobre nosotros</a></li>
 			<li><a href="/services">Metodología</a></li>
