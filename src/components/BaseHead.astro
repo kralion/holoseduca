@@ -4,18 +4,22 @@
 import "../styles/global.css";
 import "aos/dist/aos.css";
 import { SITE_TITLE } from "../consts";
-import FallbackImage from "../assets/blog-placeholder-1.jpg";
 import type { ImageMetadata } from "astro";
 
 interface Props {
 	title: string;
 	description: string;
-	image?: ImageMetadata;
+	image?: string | ImageMetadata;
 }
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
-const { title, description, image = FallbackImage } = Astro.props;
+const { title, description, image = "/og.png" } = Astro.props;
+
+const imageURL =
+	typeof image === "string"
+		? new URL(image, Astro.site)
+		: new URL(image.src, Astro.site);
 ---
 
 <!-- Global Metadata -->
@@ -60,14 +64,14 @@ const { title, description, image = FallbackImage } = Astro.props;
 <meta property="og:url" content={Astro.url} />
 <meta property="og:title" content={title} />
 <meta property="og:description" content={description} />
-<meta property="og:image" content={new URL(image.src, Astro.url)} />
+<meta property="og:image" content={imageURL} />
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image" />
 <meta property="twitter:url" content={Astro.url} />
 <meta property="twitter:title" content={title} />
 <meta property="twitter:description" content={description} />
-<meta property="twitter:image" content={new URL(image.src, Astro.url)} />
+<meta property="twitter:image" content={imageURL} />
 
 <!-- AOS Global Initialization -->
 <script>
