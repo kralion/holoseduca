@@ -1,6 +1,8 @@
 @import "tailwindcss";
-@plugin "daisyui";
 @plugin "@tailwindcss/typography";
+@plugin "daisyui" {
+  themes: dracula;
+}
 @plugin "daisyui/theme" {
   name: "holoseduca";
   default: true;
