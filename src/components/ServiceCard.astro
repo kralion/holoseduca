@@ -1,0 +1,61 @@
+---
+import type { Service } from "../data/services";
+
+interface Props {
+  service: Service;
+  className?: string;
+}
+
+const { service, className = "" } = Astro.props;
+---
+
+<div
+  class={`card bg-base-100 shadow-xl hover:shadow-2xl transition-shadow cursor-pointer ${className}`}
+  data-aos="fade-up"
+  data-service-id={service.id}
+>
+  <figure class="px-6 pt-6">
+    <div
+      class={`w-24 h-24 rounded-full ${service.bgColorClass} flex items-center justify-center`}
+    >
+      <img src={service.iconUrl} alt={service.title} class="w-16 h-16" />
+    </div>
+  </figure>
+  <div class="card-body">
+    <h2 class={`card-title ${service.colorClass}`}>{service.title}</h2>
+    <p class="text-base-content/80">{service.description}</p>
+  </div>
+</div>
+
+<!-- Modal -->
+<dialog id={`modal-${service.id}`} class="modal">
+  <div class="modal-box">
+    <h3 class={`font-bold text-lg mb-4 ${service.colorClass}`}>
+      {service.title}
+    </h3>
+    <div class="whitespace-pre-line text-base-content/80">
+      {service.longDescription}
+    </div>
+    <div class="modal-action">
+      <form method="dialog">
+        <button class="btn">Cerrar</button>
+      </form>
+    </div>
+  </div>
+  <form method="dialog" class="modal-backdrop">
+    <button>close</button>
+  </form>
+</dialog>
+
+<script define:vars={{ serviceId: service.id }}>
+  document.addEventListener("DOMContentLoaded", () => {
+    const card = document.querySelector(`[data-service-id="${serviceId}"]`);
+    const modal = document.querySelector(`#modal-${serviceId}`);
+
+    if (card && modal) {
+      card.addEventListener("click", () => {
+        modal.showModal();
+      });
+    }
+  });
+</script>

@@ -1,8 +1,7 @@
 ---
 import BaseHead from "../components/BaseHead.astro";
-import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
-import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+import Header from "../components/Header.astro";
 ---
 
 <!doctype html>
@@ -18,18 +17,22 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 		<main class="flex-grow container mx-auto px-4 py-8">
 			<div class="prose max-w-none">
 				<div
-					class="hero bg-base-200 rounded-box p-8 mb-12"
+					class="hero bg-base-200 rounded-box md:p-8 p-4 mb-12"
 					data-aos="fade-down"
 				>
-					<div class="hero-content flex-col lg:flex-row-reverse gap-12">
+					<div
+						class="hero-content flex-col-reverse md:flex-row-reverse gap-6 md:gap-12"
+					>
 						<img
 							src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=2070&auto=format&fit=crop"
-							class="max-w-sm md:max-w-md rounded-lg shadow-2xl"
+							class="w-full md:max-w-md rounded-lg shadow-2xl"
 							alt="Team working"
 						/>
-						<div class="text-center lg:text-left">
-							<h1 class="text-5xl font-bold mb-8">Acerca de HolosEduca</h1>
-							<p class="text-xl">
+						<div class="text-center md:text-left">
+							<h1 class="text-3xl md:text-5xl font-bold mb-4 md:mb-8">
+								Acerca de HolosEduca
+							</h1>
+							<p class="text-lg md:text-xl">
 								Transformando la educación en Colombia a través de soluciones de
 								aprendizaje innovadoras y accesibles.
 							</p>
@@ -50,7 +53,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 							/>
 						</figure>
 						<div class="card-body">
-							<h2 class="card-title">Nuestra Misión</h2>
+							<h2 class="card-title text-2xl">Nuestra Misión</h2>
 							<p>
 								En HolosEduca, nos dedicamos a hacer que la educación de calidad
 								sea accesible para todos los colombianos. Creemos que la
@@ -88,7 +91,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 							<div class="order-2 md:order-1">
 								<h2 class="card-title mb-4 text-3xl">Lo Que Hacemos</h2>
 								<div class="space-y-4">
-									<div class="flex items-start gap-4">
+									<div class="mb-4">
 										<div class="badge badge-primary badge-lg mt-1 font-bold">
 											1
 										</div>
@@ -97,7 +100,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 											adaptado al contexto y las necesidades de Colombia.
 										</p>
 									</div>
-									<div class="flex items-start gap-4">
+									<div class="mb-4">
 										<div class="badge badge-primary badge-lg mt-1 font-bold">
 											2
 										</div>
@@ -107,7 +110,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 											moderna.
 										</p>
 									</div>
-									<div class="flex items-start gap-4">
+									<div class="mb-4">
 										<div class="badge badge-primary badge-lg mt-1 font-bold">
 											3
 										</div>
@@ -116,7 +119,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 											compartir conocimientos y mejores prácticas.
 										</p>
 									</div>
-									<div class="flex items-start gap-4">
+									<div class="mb-4">
 										<div class="badge badge-primary badge-lg mt-1 font-bold">
 											4
 										</div>
@@ -151,7 +154,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 							class="w-24 h-24 rounded-full bg-accent/10 flex items-center justify-center mb-4"
 						>
 							<img
-								src="https://img.icons8.com/?size=100&id=112494&format=png&color=000000"
+								src="https://img.icons8.com/?size=300&id=MJQOGsDxXida&format=png&color=000000"
 								alt="Accessibility"
 								class="w-16 h-16"
 							/>
@@ -171,7 +174,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 							class="w-24 h-24 rounded-full bg-accent/10 flex items-center justify-center mb-4"
 						>
 							<img
-								src="https://img.icons8.com/?size=100&id=63691&format=png&color=000000"
+								src="https://img.icons8.com/?size=300&id=33470&format=png&color=000000"
 								alt="Innovation"
 								class="w-16 h-16"
 							/>
@@ -191,7 +194,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 							class="w-24 h-24 rounded-full bg-accent/10 flex items-center justify-center mb-4"
 						>
 							<img
-								src="https://img.icons8.com/?size=100&id=12145&format=png&color=000000"
+								src="https://img.icons8.com/?size=300&id=122811&format=png&color=000000"
 								alt="Community"
 								class="w-16 h-16"
 							/>
@@ -206,11 +209,11 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 					style="background-image: url(https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=2070&auto=format&fit=crop);"
 					data-aos="zoom-in-up"
 				>
-					<div class="hero-overlay bg-opacity-70 rounded-box"></div>
+					<div class="hero-overlay bg-opacity-80 rounded-box"></div>
 					<div class="hero-content text-center text-neutral-content py-12">
 						<div class="max-w-md">
 							<h2 class="mb-5 text-4xl font-bold">Únete a Nuestra Misión</h2>
-							<p class="mb-6">
+							<p class="mb-6 backdrop-blur-sm rounded">
 								Siempre estamos buscando educadores, creadores de contenido y
 								voluntarios apasionados que compartan nuestra visión de
 								transformar la educación en Colombia. Ya seas maestro,
@@ -219,7 +222,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 							</p>
 							<div class="flex justify-center gap-4">
 								<a href="/contact" class="btn btn-primary">Contáctanos</a>
-								<a href="/blog" class="btn btn-ghost">Lee Nuestro Blog</a>
+								<a href="/blog" class="btn btn-outline">Lee Nuestro Blog</a>
 							</div>
 						</div>
 					</div>

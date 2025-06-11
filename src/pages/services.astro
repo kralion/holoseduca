@@ -2,6 +2,8 @@
 import BaseHead from "../components/BaseHead.astro";
 import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
+import ServiceCard from "../components/ServiceCard.astro";
+import { services } from "../data/services";
 ---
 
 <!doctype html>
@@ -28,132 +30,18 @@ import Header from "../components/Header.astro";
 
       <!-- Services Grid -->
       <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-        <!-- Desarrollo Socioemocional -->
-        <div
-          class="card bg-base-100 shadow-xl hover:shadow-2xl transition-shadow"
-          data-aos="fade-right"
-        >
-          <figure class="px-6 pt-6">
-            <div
-              class="w-24 h-24 rounded-full bg-primary/10 flex items-center justify-center"
-            >
-              <img
-                src="https://img.icons8.com/?size=300&id=vDlden3lMLKn&format=png&color=000000"
-                alt="Desarrollo Socioemocional"
-                class="w-16 h-16"
-              />
-            </div>
-          </figure>
-          <div class="card-body">
-            <h2 class="card-title text-primary">Desarrollo Socioemocional</h2>
-            <p class="text-base-content/80">
-              Talleres Sobre resiliencia, inteligencia emocional y liderazgo
-              Juvenil.
-            </p>
-          </div>
-        </div>
-
-        <!-- Neuroplasticidad y Aprendizaje -->
-        <div
-          class="card bg-base-100 shadow-xl hover:shadow-2xl transition-shadow"
-          data-aos="fade-left"
-        >
-          <figure class="px-6 pt-6">
-            <div
-              class="w-24 h-24 rounded-full bg-secondary/10 flex items-center justify-center"
-            >
-              <img
-                src="https://img.icons8.com/?size=300&id=9ezUlv7zefR0&format=png&color=000000"
-                alt="Neuroplasticidad"
-                class="w-16 h-16"
-              />
-            </div>
-          </figure>
-          <div class="card-body">
-            <h2 class="card-title text-secondary">
-              Neuroplasticidad y Aprendizaje
-            </h2>
-            <p class="text-base-content/80">
-              Estrategias basadas en DUA para potenciar habilidades cognitivas
-            </p>
-          </div>
-        </div>
-
-        <!-- Educación para la Sostenibilidad -->
-        <div
-          class="card bg-base-100 shadow-xl hover:shadow-2xl transition-shadow"
-          data-aos="fade-right"
-        >
-          <figure class="px-6 pt-6">
-            <div
-              class="w-24 h-24 rounded-full bg-accent/10 flex items-center justify-center"
-            >
-              <img
-                src="https://img.icons8.com/?size=300&id=rN0tPNSeFkgH&format=png&color=000000"
-                alt="Sostenibilidad"
-                class="w-16 h-16"
-              />
-            </div>
-          </figure>
-          <div class="card-body">
-            <h2 class="card-title text-accent">
-              Educación para la Sostenibilidad
-            </h2>
-            <p class="text-base-content/80">
-              Integración de los ODS en proyectos comunitarios y ambientales
-            </p>
-          </div>
-        </div>
-
-        <!-- Creatividad y expresión -->
-        <div
-          class="card bg-base-100 shadow-xl hover:shadow-2xl transition-shadow"
-          data-aos="fade-left"
-        >
-          <figure class="px-6 pt-6">
-            <div
-              class="w-24 h-24 rounded-full bg-info/10 flex items-center justify-center"
-            >
-              <img
-                src="https://img.icons8.com/?size=300&id=24W3YiVHWvNC&format=png&color=000000"
-                alt="Creatividad"
-                class="w-16 h-16"
-              />
-            </div>
-          </figure>
-          <div class="card-body">
-            <h2 class="card-title text-info">Creatividad y expresión</h2>
-            <p class="text-base-content/80">
-              Espacios para el arte, la música y la escritura
-            </p>
-          </div>
-        </div>
-
-        <!-- Empoderamiento Juvenil -->
-        <div
-          class="card bg-base-100 shadow-xl hover:shadow-2xl transition-shadow md:col-span-2 max-w-lg mx-auto"
-          data-aos="fade-up"
-        >
-          <figure class="px-6 pt-6">
-            <div
-              class="w-24 h-24 rounded-full bg-success/10 flex items-center justify-center"
-            >
-              <img
-                src="https://img.icons8.com/?size=300&id=M5wgBy3XOiGW&format=png&color=000000"
-                alt="Empoderamiento"
-                class="w-16 h-16"
-              />
-            </div>
-          </figure>
-          <div class="card-body text-center">
-            <h2 class="card-title text-success justify-center">
-              Empoderamiento Juvenil
-            </h2>
-            <p class="text-base-content/80">
-              Formación en autonomía, Emprendimiento y participación social.
-            </p>
-          </div>
-        </div>
+        {
+          services.map((service, index) => (
+            <ServiceCard
+              service={service}
+              className={
+                index === services.length - 1
+                  ? "md:col-span-2 max-w-lg mx-auto"
+                  : ""
+              }
+            />
+          ))
+        }
       </div>
 
       <!-- Footer Quote -->
