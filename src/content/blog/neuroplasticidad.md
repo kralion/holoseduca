@@ -1,8 +1,8 @@
 ---
 title: "Neuroplasticidad: Cómo Nuestro Cerebro Aprende y se Transforma"
 description: "La neuroplasticidad es la clave para un aprendizaje efectivo. Descubre cómo las estrategias DUA pueden potenciar las habilidades cognitivas."
-pubDate: "Jun 11 2025"
-heroImage: "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?q=80&w=2148&auto=format&fit=crop"
+pubDate: "Jun 12 2025"
+heroImage: "https://img.freepik.com/free-vector/realistic-brain-set_1284-68084.jpg?ga=GA1.1.591845228.1749597496&semt=ais_hybrid&w=740"
 ---
 
 ¿Sabías que tu cerebro tiene la increíble capacidad de cambiar y adaptarse a lo largo de tu vida? Este fenómeno se llama **neuroplasticidad**, y es la base de todo aprendizaje y desarrollo de nuevas habilidades. En HolosEduca, aprovechamos este poder para diseñar experiencias educativas que realmente funcionan.

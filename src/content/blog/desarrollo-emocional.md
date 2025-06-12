@@ -1,8 +1,8 @@
 ---
 title: "El Poder del Desarrollo Socioemocional en la Educación"
 description: "Descubre cómo el desarrollo de la inteligencia emocional, la resiliencia y el liderazgo puede transformar la vida de los jóvenes."
-pubDate: "Jun 10 2024"
-heroImage: "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?q=80&w=2148&auto=format&fit=crop"
+pubDate: "May 7 2025"
+heroImage: "https://img.freepik.com/free-photo/top-view-arrangement-with-different-feelings_23-2148860308.jpg?ga=GA1.1.591845228.1749597496&semt=ais_hybrid&w=740"
 ---
 
 En HolosEduca, creemos firmemente que la educación va más allá de los libros de texto y las calificaciones. Una parte fundamental de nuestro enfoque es el **Desarrollo Socioemocional**, un pilar que prepara a niños y jóvenes para enfrentar los desafíos de la vida con confianza y empatía.

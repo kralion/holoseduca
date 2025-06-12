@@ -27,11 +27,14 @@ import Footer from "../components/Footer.astro";
         </div>
       </div>
 
-      <div class="grid lg:grid-cols-2 gap-8">
-        <div class="card bg-base-100 shadow-xl" data-aos="fade-right">
+      <div class="grid lg:grid-cols-1 max-w-2xl mx-auto gap-8">
+        <div
+          class="card bg-base-100 shadow-xl border border-zinc-100"
+          data-aos="fade-right"
+        >
           <div class="card-body">
             <h2 class="card-title text-2xl mb-6">Envíanos un mensaje</h2>
-            <form class="space-y-4" id="contact-form">
+            <form class="space-y-8" id="contact-form">
               <div class="form-control">
                 <label class="label" for="name">
                   <span class="label-text">Nombre</span>
@@ -59,6 +62,20 @@ import Footer from "../components/Footer.astro";
               </div>
 
               <div class="form-control">
+                <label class="label" for="country">
+                  <span class="label-text">País</span>
+                </label>
+                <select id="country" class="select select-bordered w-full">
+                  <option>Colombia</option>
+                  <option>Argentina</option>
+                  <option>Chile</option>
+                  <option>Mexico</option>
+                  <option>Peru</option>
+                  <option>Otro</option>
+                </select>
+              </div>
+
+              <div class="form-control">
                 <label class="label" for="subject">
                   <span class="label-text">Asunto</span>
                 </label>
@@ -72,6 +89,7 @@ import Footer from "../components/Footer.astro";
                     >Oportunidad de colaboración</option
                   >
                   <option value="volunteer">Interés en voluntariado</option>
+                  <option value="donation">Donación</option>
                   <option value="support">Apoyo educativo</option>
                   <option value="other">Otro</option>
                 </select>
@@ -89,120 +107,14 @@ import Footer from "../components/Footer.astro";
               </div>
 
               <div class="form-control mt-6">
-                <button type="submit" class="btn btn-primary w-full"
+                <button type="submit" class="btn btn-neutral w-full btn-lg"
                   >Enviar por WhatsApp</button
                 >
               </div>
             </form>
           </div>
         </div>
-
-        <div class="space-y-8" data-aos="fade-left">
-          <div
-            class="card bg-secondary text-secondary-content"
-            data-aos="fade-up"
-            data-aos-delay="200"
-          >
-            <div class="card-body">
-              <h2 class="card-title text-2xl mb-4">
-                Otras formas de contactarnos
-              </h2>
-              <div class="space-y-4">
-                <div>
-                  <strong>Correo electrónico:</strong><br />
-                  <a
-                    href="mailto:contact@holoseduca.org"
-                    class="link link-hover">contact@holoseduca.org</a
-                  >
-                </div>
-                <div>
-                  <strong>Teléfono:</strong><br />
-                  <a href="tel:+571234567890" class="link link-hover"
-                    >+57 (1) 234-567-890</a
-                  >
-                </div>
-                <div>
-                  <strong>Redes sociales:</strong><br />
-                  <div class="flex gap-4 mt-2">
-                    <a href="#" class="btn btn-circle btn-outline btn-sm">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="h-4 w-4"
-                        fill="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
-                        ></path>
-                      </svg>
-                    </a>
-                    <a href="#" class="btn btn-circle btn-outline btn-sm">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="h-4 w-4"
-                        fill="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"
-                        ></path>
-                      </svg>
-                    </a>
-                    <a href="#" class="btn btn-circle btn-outline btn-sm">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="h-4 w-4"
-                        fill="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.14.18-.357.354-.714.354l.253-3.647 6.628-6.01c.285-.255-.062-.4-.445-.145L7.773 13.775 4.233 12.738c-.644-.213-.657-.644.136-.953l13.59-5.236c.538-.197 1.006.128.935.672z"
-                        ></path>
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
-      <section class="mt-20 contact-map-section max-w-6xl mx-auto">
-        <div class="text-center mb-12">
-          <h2
-            class="text-3xl md:text-4xl lg:text-[50px] font-bold mb-6"
-            data-aos="fade-up"
-            data-aos-delay="200"
-          >
-            Encuéntranos
-          </h2>
-          <p
-            class="text-lg max-w-2xl mx-auto"
-            data-aos="fade-up"
-            data-aos-delay="300"
-          >
-            Estamos ubicados en una zona accesible de Bogotá.
-          </p>
-        </div>
-
-        <div
-          class="rounded-3xl overflow-hidden shadow-lg"
-          data-aos="zoom-in"
-          data-aos-delay="400"
-        >
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3923.410904226554!2d-73.25928782455598!3d10.468237864801907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e8ab900687401cb%3A0x1ffcdd02824541ed!2sLa%20popa!5e0!3m2!1ses-419!2spe!4v1749639504050!5m2!1ses-419!2spe"
-            width="100%"
-            height="450"
-            style="border:0;"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-            title="Ubicación de Nido Perulina"
-            aria-label="Mapa interactivo que muestra la ubicación de Nido Perulina en Av. Agustín de la Rosa Toro 908, Lince, Lima, Perú. Puede usar este mapa para obtener direcciones y navegar hasta nuestras instalaciones."
-          ></iframe>
-        </div>
-      </section>
     </main>
     <Footer />
 
@@ -213,6 +125,9 @@ import Footer from "../components/Footer.astro";
 
         const nameInput = document.getElementById("name") as HTMLInputElement;
         const emailInput = document.getElementById("email") as HTMLInputElement;
+        const countryInput = document.getElementById(
+          "country",
+        ) as HTMLSelectElement;
         const subjectInput = document.getElementById(
           "subject",
         ) as HTMLSelectElement;
@@ -222,14 +137,19 @@ import Footer from "../components/Footer.astro";
 
         const name = nameInput.value;
         const email = emailInput.value;
+        const country = countryInput.value;
         const subject = subjectInput.value;
         const message = messageInput.value;
 
-        const whatsappNumber = "573015763089";
+        const whatsappNumber = "573216193708";
         let whatsappMessage = `Hola, mi nombre es ${name}.`;
 
         if (email) {
           whatsappMessage += `\nMi correo es: ${email}.`;
+        }
+
+        if (country) {
+          whatsappMessage += `\nPaís: ${country}.`;
         }
 
         if (subject) {

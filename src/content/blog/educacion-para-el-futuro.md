@@ -1,8 +1,8 @@
 ---
 title: "Educando para un Futuro Sostenible: Los ODS en Acción"
 description: "La educación es clave para construir un mundo más sostenible. Así es como integramos los Objetivos de Desarrollo Sostenible (ODS) en nuestros proyectos."
-pubDate: "Jun 11 2025"
-heroImage: "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?q=80&w=2148&auto=format&fit=crop"
+pubDate: "May 22 2025"
+heroImage: "https://img.freepik.com/free-photo/sustainable-development-goals-still-life_23-2150196624.jpg?ga=GA1.1.591845228.1749597496&semt=ais_hybrid&w=740"
 ---
 
 La **Educación para la Sostenibilidad** es más que aprender sobre el medio ambiente. Se trata de empoderar a los jóvenes con el conocimiento, las habilidades y los valores necesarios para crear un futuro justo, pacífico y sostenible para todos. En HolosEduca, este es un componente esencial de nuestra metodología.
